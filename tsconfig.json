@@ -21,7 +21,7 @@
     "config/**/*",
     ".umirc.ts",
     "typings.d.ts"
-  ],
+, "layouts"  ],
   "exclude": [
     "node_modules",
     "lib",

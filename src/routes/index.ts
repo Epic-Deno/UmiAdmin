@@ -3,15 +3,28 @@
  * @Author: Pony
  * @Date: 2021-08-08 21:59:07
  * @LastEditors: Pony
- * @LastEditTime: 2021-08-08 22:52:13
+ * @LastEditTime: 2021-08-08 23:24:50
  */
 export default [
     { 
         path: '/', 
         title: '首页', 
+        name: '首页',
         component: '@/pages/index',
-        // menuRender: true,
-        // menuHeaderRender: true,
     },
-    { path: '/userManagement', title: '用户管理页面', component: '@/pages/userManagement' }
+    { 
+        path: '/userManagement',
+        name: '用户管理', 
+        title: '用户管理', 
+        component: '@/layouts/index',
+        routes: [
+            { path: '/userManagement/list', name: '用户列表', component: '@/pages/userManagement' },
+            { path: '/userManagement/userPermission', name: '用户权限', component: '@/pages/userManagement/userPermission' },
+        ],
+    },
+    { 
+        path: '/settings', 
+        name: '系统管理',
+        component: '@/layouts/index',
+    },
 ]
