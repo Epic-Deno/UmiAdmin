@@ -3,29 +3,30 @@
  * @Author: ZHANG ZHEN
  * @Date: 2021-07-02 23:04:10
  * @LastEditors: Pony
- * @LastEditTime: 2021-08-09 20:58:32
+ * @LastEditTime: 2021-08-09 21:31:47
  */
 import { defineConfig } from 'umi';
 import routes from './src/routes';
 export default defineConfig({
-  title: 'Pony design',
+  title: '博客管理台',
   mfsu: {},
-  layout: {
-    name: 'Pony design',
-    locale: true,
-    layout: 'side',
-    logo: 'https://sf1-ttcdn-tos.pstatp.com/img/user-avatar/ad7186da163aaf25f3a2d719603c37d0~300x300.image',
-  },
+  // layout: {
+  //   name: 'Pony design',
+  //   locale: true,
+  //   layout: 'side',
+  //   logo: 'https://sf1-ttcdn-tos.pstatp.com/img/user-avatar/ad7186da163aaf25f3a2d719603c37d0~300x300.image',
+  // },
   nodeModulesTransform: {
     type: 'none',
   },
-  locale: {
-    // default zh-CN
-    default: 'zh-CN',
-    // default true, when it is true, will use `navigator.language` overwrite default
-    antd: true,
-    baseNavigator: true,
-  },
+  404: true,
+  // locale: {
+  //   // default zh-CN
+  //   default: 'zh-CN',
+  //   // default true, when it is true, will use `navigator.language` overwrite default
+  //   antd: true,
+  //   baseNavigator: true,
+  // },
   routes: routes,
   fastRefresh: {},
   theme: {

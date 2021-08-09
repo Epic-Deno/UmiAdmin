@@ -1,60 +1,45 @@
 /*
  * @Description: Created By Pony
  * @Author: Pony
- * @Date: 2021-08-09 21:00:23
+ * @Date: 2021-08-09 21:32:29
  * @LastEditors: Pony
- * @LastEditTime: 2021-08-09 21:04:26
+ * @LastEditTime: 2021-08-09 21:35:58
  */
 export default [
-    {
-      title: 'Dashboard',
-      link: '/dashboard',
-      key: 'dashboard',
-      icon: '',
-      children: [],
-    },
-    {
-      title: '列表页',
-      link: '/list',
-      key: 'list',
-      icon: '',
-      children: [
-        {
-          title: '查询列表',
-          link: '/list/queryTable',
-          key: 'queryTable',
-          icon: '',
-          children: [],
-        },
-      ],
-    },
-    {
-      title: '功能页',
-      link: '/func',
-      key: 'func',
-      icon: '',
-      children: [
-        {
-          title: '拖拽排序',
-          link: '/func/draggable',
-          key: 'draggable',
-          icon: '',
-          children: [],
-        },
-        {
-          title: 'gg-editor',
-          link: '/func/ggEditor',
-          key: 'ggEditor',
-          icon: '',
-          children: [],
-        },
-        {
-          title: 'antvX6',
-          link: '/func/antvX6',
-          key: 'antvX6',
-          icon: '',
-          children: [],
-        },
-      ],
-    },
-  ];
+  {
+    title: 'Dashboard',
+    link: '/',
+    key: 'dashboard',
+    icon: 'home',
+    children: [],
+  },
+  {
+    title: '用户管理',
+    link: '/userManagement',
+    key: 'userManagement',
+    icon: '',
+    children: [
+      {
+        title: '用户列表',
+        link: '/userManagement/list',
+        key: 'list',
+        icon: '',
+        children: [],
+      },
+      {
+        title: '用户权限',
+        link: '/userManagement/userPermission',
+        key: 'list',
+        icon: '',
+        children: [],
+      },
+    ],
+  },
+  {
+    title: '系统管理',
+    link: '/settings',
+    key: 'settings',
+    icon: '',
+    children: [],
+  },
+];

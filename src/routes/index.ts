@@ -3,7 +3,7 @@
  * @Author: Pony
  * @Date: 2021-08-08 21:59:07
  * @LastEditors: Pony
- * @LastEditTime: 2021-08-08 23:24:50
+ * @LastEditTime: 2021-08-09 21:13:41
  */
 export default [
     { 
@@ -27,4 +27,5 @@ export default [
         name: '系统管理',
         component: '@/layouts/index',
     },
+    { component: '@/pages/404' },
 ]
