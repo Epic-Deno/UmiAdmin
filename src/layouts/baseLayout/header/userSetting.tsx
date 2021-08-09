@@ -3,7 +3,7 @@
  * @Author: Pony
  * @Date: 2021-08-09 21:53:38
  * @LastEditors: Pony
- * @LastEditTime: 2021-08-09 22:01:33
+ * @LastEditTime: 2021-08-09 22:48:19
  */
 
 import React, { FC } from 'react';
@@ -14,3 +14,53 @@ import {
   LogoutOutlined,
   DownOutlined,
 } from '@ant-design/icons';
+import { LoginModelState, GlobalModelState } from '@/models/connect';
+
+export interface HeaderLayoutProps {
+  dispatch: Dispatch;
+  global: GlobalModelState;
+}
+
+export interface ClickParam {
+  key: string;
+  [key: string]: any;
+}
+
+const UserSettingLayout: FC<HeaderLayoutProps> = ({ global, dispatch }) => {
+  function handleSubmit(event: ClickParam) {
+    const { key } = event;
+    key === 'logout' &&
+      dispatch({
+        type: 'login/logout',
+      });
+  }
+
+  const { userInfo } = global;
+
+  const menu = (
+    <Menu>
+      <Menu.Item key="setPwd">
+          <SettingOutlined />
+          设置密码
+      </Menu.Item>
+      <Menu.Divider />
+      <Menu.Item key="logout">
+          <LogoutOutlined />退出登录
+      </Menu.Item>
+    </Menu>
+  );
+  return (
+      <div
+        style={{
+            width: 200,
+            textAlign: 'right'
+        }}
+      >
+          <Dropdown overlay={menu} placement="bottomRight">
+            <span style={{ cursor: 'pointer', color: '#fff', fontSize: 16 }}>
+                
+            </span>
+          </Dropdown>
+      </div>
+  )
+};
