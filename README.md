@@ -1,5 +1,9 @@
 # umi project
-
+[![node](https://img.shields.io/badge/node-%3E%3D10.13.0-brightgreen)](https://mobile.ant.design)
+[![Build With Umi](https://img.shields.io/badge/umi-%5E3.5.2-brightgreen)](https://umijs.org/)
+[![Build With React](https://img.shields.io/badge/react-%5E17.x-brightgreen)](https://react.docschina.org/)
+[![Build With antd](https://img.shields.io/badge/antd-%5E4.2.0-brightgreen)](https://ant.design/index-cn)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)]()
 ## 开始项目
 
 安装依赖：
