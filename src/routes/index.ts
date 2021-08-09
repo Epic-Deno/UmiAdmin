@@ -3,14 +3,17 @@
  * @Author: Pony
  * @Date: 2021-08-08 21:59:07
  * @LastEditors: Pony
- * @LastEditTime: 2021-08-09 21:13:41
+ * @LastEditTime: 2021-08-09 23:18:38
  */
 export default [
     { 
         path: '/', 
         title: '首页', 
         name: '首页',
-        component: '@/pages/index',
+        component: '@/layouts/index',
+        routes: [
+            { path: '/', name: '用户列表', component: '@/pages/index' },
+        ],
     },
     { 
         path: '/userManagement',

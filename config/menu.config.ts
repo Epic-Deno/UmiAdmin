@@ -3,7 +3,7 @@
  * @Author: Pony
  * @Date: 2021-08-09 21:32:29
  * @LastEditors: Pony
- * @LastEditTime: 2021-08-09 21:35:58
+ * @LastEditTime: 2021-08-09 23:25:13
  */
 export default [
   {
@@ -29,7 +29,7 @@ export default [
       {
         title: '用户权限',
         link: '/userManagement/userPermission',
-        key: 'list',
+        key: 'userPermission',
         icon: '',
         children: [],
       },
