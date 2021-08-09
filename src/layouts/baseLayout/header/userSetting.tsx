@@ -3,7 +3,7 @@
  * @Author: Pony
  * @Date: 2021-08-09 21:53:38
  * @LastEditors: Pony
- * @LastEditTime: 2021-08-09 22:48:19
+ * @LastEditTime: 2021-08-09 22:51:10
  */
 
 import React, { FC } from 'react';
@@ -40,27 +40,38 @@ const UserSettingLayout: FC<HeaderLayoutProps> = ({ global, dispatch }) => {
   const menu = (
     <Menu>
       <Menu.Item key="setPwd">
-          <SettingOutlined />
-          设置密码
+        <SettingOutlined />
+        设置密码
       </Menu.Item>
       <Menu.Divider />
       <Menu.Item key="logout">
-          <LogoutOutlined />退出登录
+        <LogoutOutlined />
+        退出登录
       </Menu.Item>
     </Menu>
   );
   return (
-      <div
-        style={{
-            width: 200,
-            textAlign: 'right'
-        }}
-      >
-          <Dropdown overlay={menu} placement="bottomRight">
-            <span style={{ cursor: 'pointer', color: '#fff', fontSize: 16 }}>
-                
-            </span>
-          </Dropdown>
-      </div>
-  )
+    <div
+      style={{
+        width: 200,
+        textAlign: 'right',
+      }}
+    >
+      <Dropdown overlay={menu} placement="bottomRight">
+        <span style={{ cursor: 'pointer', color: '#fff', fontSize: 16 }}>
+          {userInfo.username} <DownOutlined />
+        </span>
+      </Dropdown>
+    </div>
+  );
 };
+
+export default connect(
+  ({
+    login,
+    global,
+  }: {
+    login: LoginModelState;
+    global: GlobalModelState;
+  }) => ({ login, global }),
+)(UserSettingLayout);
