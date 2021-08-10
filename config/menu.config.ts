@@ -1,13 +1,13 @@
 /*
- * @Description: Created By Pony
+ * @Description: 菜单
  * @Author: Pony
  * @Date: 2021-08-09 21:32:29
  * @LastEditors: Pony
- * @LastEditTime: 2021-08-09 23:25:13
+ * @LastEditTime: 2021-08-10 22:15:26
  */
 export default [
   {
-    title: 'Dashboard',
+    title: '首页',
     link: '/',
     key: 'dashboard',
     icon: 'home',

@@ -10,7 +10,7 @@
   display: flex;
   justify-content: space-between;
   padding: 0 24px;
-  background: url(https://sf1-ttcdn-tos.pstatp.com/img/user-avatar/ad7186da163aaf25f3a2d719603c37d0~300x300.image) 100%/100% no-repeat;
+  background: url(../../assets/topHeader.png) 100%/100% no-repeat;
 }
 .container .content {
   flex: auto;

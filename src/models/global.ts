@@ -3,7 +3,7 @@
  * @Author: Pony
  * @Date: 2021-08-09 22:32:16
  * @LastEditors: Pony
- * @LastEditTime: 2021-08-09 22:32:26
+ * @LastEditTime: 2021-08-10 22:22:52
  */
 import { Effect, Reducer, Subscription } from 'umi';
 import { queryUserInfo } from '@/services/login';
