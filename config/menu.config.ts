@@ -3,12 +3,12 @@
  * @Author: Pony
  * @Date: 2021-08-09 21:32:29
  * @LastEditors: Pony
- * @LastEditTime: 2021-08-10 22:15:26
+ * @LastEditTime: 2021-08-10 23:41:51
  */
 export default [
   {
     title: '首页',
-    link: '/',
+    link: '/dashboard',
     key: 'dashboard',
     icon: 'home',
     children: [],
