@@ -1,9 +1,10 @@
 /*
  * @Description: 路由入口
+ * @Remark: 路由的写法会干扰umi的路由
  * @Author: Pony
  * @Date: 2021-08-08 21:59:07
  * @LastEditors: Pony
- * @LastEditTime: 2021-08-09 23:18:38
+ * @LastEditTime: 2021-08-10 23:08:55
  */
 export default [
     { 

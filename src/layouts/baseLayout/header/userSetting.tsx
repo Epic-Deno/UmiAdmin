@@ -3,12 +3,12 @@
  * @Author: Pony
  * @Date: 2021-08-09 21:53:38
  * @LastEditors: Pony
- * @LastEditTime: 2021-08-09 22:51:10
+ * @LastEditTime: 2021-08-10 23:36:18
  */
 
 import React, { FC } from 'react';
 import { connect, Dispatch } from 'umi';
-import { Dropdown, Menu } from 'antd';
+import { Dropdown, Menu, Avatar } from 'antd';
 import {
   SettingOutlined,
   LogoutOutlined,
@@ -40,12 +40,12 @@ const UserSettingLayout: FC<HeaderLayoutProps> = ({ global, dispatch }) => {
   const menu = (
     <Menu>
       <Menu.Item key="setPwd">
-        <SettingOutlined />
+        <SettingOutlined style={{ marginRight: '4px' }}/>
         设置密码
       </Menu.Item>
       <Menu.Divider />
       <Menu.Item key="logout">
-        <LogoutOutlined />
+        <LogoutOutlined style={{ marginRight: '4px' }}/>
         退出登录
       </Menu.Item>
     </Menu>
@@ -57,8 +57,9 @@ const UserSettingLayout: FC<HeaderLayoutProps> = ({ global, dispatch }) => {
         textAlign: 'right',
       }}
     >
+      <Avatar src="https://avatars.githubusercontent.com/u/74635349?s=64&v=4" style={{ marginRight: '8px' }}/>
       <Dropdown overlay={menu} placement="bottomRight">
-        <span style={{ cursor: 'pointer', color: '#fff', fontSize: 16 }}>
+        <span style={{ cursor: 'pointer', color: '#fff', fontSize: 14 }}>
           {userInfo.username} <DownOutlined />
         </span>
       </Dropdown>
