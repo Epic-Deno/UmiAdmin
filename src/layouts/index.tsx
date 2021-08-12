@@ -3,11 +3,11 @@
  * @Author: Pony
  * @Date: 2021-08-08 23:17:13
  * @LastEditors: Pony
- * @LastEditTime: 2021-08-12 22:18:27
+ * @LastEditTime: 2021-08-12 22:34:13
  */
-import { Redirect } from 'umi';
 import BaseLayout from './baseLayout';
 import CommonLayout from './commonLayout';
+import LoginLayout from './loginLayout';
 
 export default (props: any) => {
     const { location } = props
@@ -15,6 +15,9 @@ export default (props: any) => {
     if (!location.state) {
         return <CommonLayout>{props.children}</CommonLayout>
     }
-
+    /*登录页面走单独的模板*/
+    if (location['pathname'] === "/user/login") {
+        return <LoginLayout>{props.children}</LoginLayout>
+    }
     return <BaseLayout>{props.children}</BaseLayout>;
 }

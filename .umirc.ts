@@ -3,7 +3,7 @@
  * @Author: ZHANG ZHEN
  * @Date: 2021-07-02 23:04:10
  * @LastEditors: Pony
- * @LastEditTime: 2021-08-12 22:25:34
+ * @LastEditTime: 2021-08-12 22:29:22
  */
 import { defineConfig } from 'umi';
 import routes from './src/routes';
@@ -27,7 +27,7 @@ export default defineConfig({
   //   antd: true,
   //   baseNavigator: true,
   // },
-  routes: routes,
+  // routes: routes,
   fastRefresh: {},
   theme: {
     '@primary-color': '#1DA57A',
