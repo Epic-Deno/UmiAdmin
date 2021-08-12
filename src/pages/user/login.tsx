@@ -3,10 +3,12 @@
  * @Author: Pony
  * @Date: 2021-08-12 22:08:27
  * @LastEditors: Pony
- * @LastEditTime: 2021-08-12 23:43:57
+ * @LastEditTime: 2021-08-12 23:53:01
  */
+import LoginModule from '@/components/loginModule';
 import './index.less';
 import logo from '@/assets/logo.png'
+
 export default () => {
   return (
     <div className="userLayOut-cover">
@@ -23,6 +25,7 @@ export default () => {
             </div>
           </div>
           {/* form */}
+          <LoginModule />
         </div>
       </div>
     </div>

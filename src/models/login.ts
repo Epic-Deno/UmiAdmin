@@ -3,7 +3,7 @@
  * @Author: Pony
  * @Date: 2021-08-09 22:04:59
  * @LastEditors: Pony
- * @LastEditTime: 2021-08-09 22:10:14
+ * @LastEditTime: 2021-08-12 23:59:05
  */
 import { Effect, Reducer, history } from 'umi';
 import { message } from 'antd';
@@ -81,7 +81,7 @@ const LoginModel: LoginModelType = {
       if (response.status === 'ok') {
         localStorage.removeItem('userid');
         history.replace({
-          pathname: '/login',
+          pathname: '/user/login',
           search: `timestamp=${new Date().getTime()}`,
         });
       }

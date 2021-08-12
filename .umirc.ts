@@ -3,7 +3,7 @@
  * @Author: ZHANG ZHEN
  * @Date: 2021-07-02 23:04:10
  * @LastEditors: Pony
- * @LastEditTime: 2021-08-12 22:29:22
+ * @LastEditTime: 2021-08-12 23:55:13
  */
 import { defineConfig } from 'umi';
 import routes from './src/routes';
@@ -30,7 +30,7 @@ export default defineConfig({
   // routes: routes,
   fastRefresh: {},
   theme: {
-    '@primary-color': '#1DA57A',
+    '@primary-color': '#1890ff',
   },
   antd: {
     dark: false,
