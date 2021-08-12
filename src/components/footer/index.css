@@ -1,0 +1,29 @@
+.footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  padding: 0 16px;
+  margin: 48px 0 24px;
+  text-align: center;
+}
+.footer .links {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+.footer .links span {
+  color: #fff;
+}
+.footer .links a {
+  color: lightgreen;
+  transition: all 0.3s;
+}
+.footer .links a:not(:last-child) {
+  margin-right: 40px;
+}
+.footer .copyright {
+  color: #fff;
+  font-size: 14px;
+}
+.footer .copyright a {
+  color: lightgreen;
+}
