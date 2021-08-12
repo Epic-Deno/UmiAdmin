@@ -3,9 +3,10 @@
  * @Author: Pony
  * @Date: 2021-08-12 22:08:27
  * @LastEditors: Pony
- * @LastEditTime: 2021-08-12 23:25:46
+ * @LastEditTime: 2021-08-12 23:43:57
  */
 import './index.less';
+import logo from '@/assets/logo.png'
 export default () => {
   return (
     <div className="userLayOut-cover">
@@ -14,13 +15,14 @@ export default () => {
           <div className="top">
             <div className="header">
               <a href="/">
-                <img src="../../assets/logo.png" className="logo" alt="" />
+                <img src={logo} className="logo" alt="" />
               </a>
             </div>
             <div className="desc">
-              Powered By Fantastic Artwork Vue.js @ Evan You.
+              Powered By Fantastic Artwork Umi.js.
             </div>
           </div>
+          {/* form */}
         </div>
       </div>
     </div>

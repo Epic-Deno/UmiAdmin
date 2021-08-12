@@ -1,32 +1,70 @@
 .userLayOut-cover {
-    width: 600px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 90%;
-    display: flex;
-    -webkit-box-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    align-items: center;
+  width: 600px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 90%;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
 
-    .login-form-wrap {
-      margin: 0 120px 0 50px;
-      width: 520px;
-      height: 440px;
-      background: padding-box rgb(255, 255, 255);
-      border-style: solid;
-      border-color: rgba(255, 255, 255, 0.5);
-      border-image: initial;
-      border-width: 8px;
-      border-radius: 4px;
-      .login-form__content {
-        width: 100%;
-        height: 100%;
-        border: 1px solid rgb(153, 153, 153);
-        border-radius: 2px;
-        box-sizing: border-box;
-        padding: 40px 8px;
-      }
+  .login-form-wrap {
+    margin: 0 120px 0 50px;
+    width: 520px;
+    height: 440px;
+    background: padding-box rgb(255, 255, 255);
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.5);
+    border-image: initial;
+    border-width: 8px;
+    border-radius: 4px;
+    .login-form__content {
+      width: 100%;
+      height: 100%;
+      border: 1px solid rgb(153, 153, 153);
+      border-radius: 2px;
+      box-sizing: border-box;
+      padding: 40px 8px;
     }
   }
+}
+
+.top {
+  text-align: center;
+
+  .header {
+    height: 60px;
+    line-height: 44px;
+
+    .badge {
+      position: absolute;
+      display: inline-block;
+      line-height: 1;
+      vertical-align: middle;
+      margin-left: -12px;
+      margin-top: -10px;
+      opacity: 0.8;
+    }
+
+    .logo {
+      height: 60px;
+      vertical-align: top;
+      margin-right: 16px;
+      border-style: none;
+    }
+
+    .title {
+      font-size: 33px;
+      color: #fff;
+      font-family: 'Chinese Quote', -apple-system, BlinkMacSystemFont,
+        'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei',
+        'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Color Emoji',
+        'Segoe UI Emoji', 'Segoe UI Symbol';
+      font-weight: 600;
+      position: relative;
+      top: 2px;
+    }
+  }
+}

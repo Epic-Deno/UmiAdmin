@@ -29,3 +29,33 @@
   box-sizing: border-box;
   padding: 40px 8px;
 }
+.top {
+  text-align: center;
+}
+.top .header {
+  height: 60px;
+  line-height: 44px;
+}
+.top .header .badge {
+  position: absolute;
+  display: inline-block;
+  line-height: 1;
+  vertical-align: middle;
+  margin-left: -12px;
+  margin-top: -10px;
+  opacity: 0.8;
+}
+.top .header .logo {
+  height: 60px;
+  vertical-align: top;
+  margin-right: 16px;
+  border-style: none;
+}
+.top .header .title {
+  font-size: 33px;
+  color: #fff;
+  font-family: 'Chinese Quote', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-weight: 600;
+  position: relative;
+  top: 2px;
+}
