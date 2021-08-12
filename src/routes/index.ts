@@ -4,7 +4,7 @@
  * @Author: Pony
  * @Date: 2021-08-08 21:59:07
  * @LastEditors: Pony
- * @LastEditTime: 2021-08-10 23:08:55
+ * @LastEditTime: 2021-08-12 22:27:48
  */
 export default [
     { 
@@ -13,7 +13,7 @@ export default [
         name: '首页',
         component: '@/layouts/index',
         routes: [
-            { path: '/', name: '用户列表', component: '@/pages/index' },
+            { path: '/', name: '首页', component: '@/pages/index' },
         ],
     },
     { 
@@ -22,7 +22,7 @@ export default [
         title: '用户管理', 
         component: '@/layouts/index',
         routes: [
-            { path: '/userManagement/list', name: '用户列表', component: '@/pages/userManagement' },
+            { path: '/userManagement/list', name: '用户列表', component: '@/pages/userManagement/list' },
             { path: '/userManagement/userPermission', name: '用户权限', component: '@/pages/userManagement/userPermission' },
         ],
     },
