@@ -3,7 +3,7 @@
  * @Author: Pony
  * @Date: 2021-08-08 23:17:13
  * @LastEditors: Pony
- * @LastEditTime: 2021-08-12 23:59:17
+ * @LastEditTime: 2021-08-13 22:15:46
  */
 import { history } from 'umi';
 import BaseLayout from './baseLayout';
@@ -16,7 +16,7 @@ export default (props: any) => {
   if (!userId) {
     history.replace({
       pathname: '/user/login',
-      search: `timestamp=${new Date().getTime()}`,
+     
     });
   }
   /*登录页面走单独的模板*/

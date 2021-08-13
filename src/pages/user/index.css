@@ -12,7 +12,7 @@
 }
 .userLayOut-cover .login-form-wrap {
   margin: 0 120px 0 50px;
-  width: 520px;
+  width: 360px;
   height: 440px;
   background: padding-box #ffffff;
   border-style: solid;
@@ -50,6 +50,7 @@
   vertical-align: top;
   margin-right: 16px;
   border-style: none;
+  border-radius: 8px;
 }
 .top .header .title {
   font-size: 33px;
