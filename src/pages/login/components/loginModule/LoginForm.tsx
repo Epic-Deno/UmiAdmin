@@ -3,13 +3,13 @@
  * @Author: Pony
  * @Date: 2021-08-12 23:22:49
  * @LastEditors: Pony
- * @LastEditTime: 2021-08-13 23:40:44
+ * @LastEditTime: 2021-08-13 23:51:46
  */
 import React, { FC } from 'react';
 import { connect, Dispatch } from 'umi';
 import { LoginModelState, Loading } from '@/models/connect';
 
-import { SubmitValueProps } from '../../login';
+import { SubmitValueProps } from '../../index';
 
 import { Form, Input, Button, Row, Col, Checkbox } from 'antd';
 import { UserOutlined, LockOutlined, ExclamationCircleOutlined } from '@ant-design/icons'

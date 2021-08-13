@@ -3,12 +3,12 @@
  * @Author: Pony
  * @Date: 2021-08-12 22:08:27
  * @LastEditors: Pony
- * @LastEditTime: 2021-08-13 23:23:38
+ * @LastEditTime: 2021-08-13 23:54:18
  */
 import React, { FC } from 'react';
 import { connect, Dispatch } from 'umi';
 import { ConnectState } from '@/models/connect';
-import LoginModule from './components/loginModule';
+import LoginForm from './components/loginModule/LoginForm';
 import './index.less';
 import logo from '@/assets/logo.png'
 
@@ -24,6 +24,7 @@ export interface SubmitValueProps {
 
 const Login: FC<LoginLayoutProps> = ({ dispatch }) => {
   const handleSubmit = (values: SubmitValueProps) => {
+    console.log(values)
     dispatch({
       type: '/login/queryLogin',
       payload: {
@@ -46,7 +47,7 @@ const Login: FC<LoginLayoutProps> = ({ dispatch }) => {
             </div>
           </div>
           {/* form */}
-          <LoginModule onSubmit={handleSubmit}/>
+          <LoginForm onSubmit={handleSubmit}/>
         </div>
       </div>
     </div>
