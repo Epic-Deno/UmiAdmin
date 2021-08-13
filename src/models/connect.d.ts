@@ -3,7 +3,7 @@
  * @Author: Pony
  * @Date: 2021-08-09 22:04:31
  * @LastEditors: Pony
- * @LastEditTime: 2021-08-09 22:33:21
+ * @LastEditTime: 2021-08-14 00:12:28
  */
 import { GlobalModelState } from './global';
 import { LoginModelState } from './login';
@@ -19,8 +19,6 @@ export interface Loading {
     setting?: boolean;
     user?: boolean;
     login: boolean;
-    queryTable: boolean;
-    dashboard: boolean;
   };
 }
 
