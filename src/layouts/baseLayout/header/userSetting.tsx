@@ -3,7 +3,7 @@
  * @Author: Pony
  * @Date: 2021-08-09 21:53:38
  * @LastEditors: Pony
- * @LastEditTime: 2021-08-10 23:36:18
+ * @LastEditTime: 2021-08-14 00:21:56
  */
 
 import React, { FC } from 'react';
@@ -44,7 +44,7 @@ const UserSettingLayout: FC<HeaderLayoutProps> = ({ global, dispatch }) => {
         设置密码
       </Menu.Item>
       <Menu.Divider />
-      <Menu.Item key="logout">
+      <Menu.Item key="logout" onClick={handleSubmit}>
         <LogoutOutlined style={{ marginRight: '4px' }}/>
         退出登录
       </Menu.Item>

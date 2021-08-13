@@ -3,9 +3,9 @@
  * @Author: Pony
  * @Date: 2021-08-09 22:32:16
  * @LastEditors: Pony
- * @LastEditTime: 2021-08-13 22:50:03
+ * @LastEditTime: 2021-08-14 00:27:30
  */
-import { Effect, Reducer, Subscription } from 'umi';
+import { Effect, Reducer, Subscription, history } from 'umi';
 import { queryUserInfo } from '@/services/login';
 import menusSource from '../../config/menu.config';
 import { MenusDate, LoginUserInfoState } from './connect.d';
@@ -51,7 +51,12 @@ const GlobalModel: GlobalModelType = {
             userInfo: response.data,
           },
         });
-      } 
+      } else {
+        history.replace({
+          pathname: '/login',
+          search: `timestamp=${new Date().getTime()}`,
+        })
+      }
       
     },
   },
