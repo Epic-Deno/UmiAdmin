@@ -3,16 +3,34 @@
  * @Author: Pony
  * @Date: 2021-08-12 22:08:27
  * @LastEditors: Pony
- * @LastEditTime: 2021-08-13 23:12:18
+ * @LastEditTime: 2021-08-13 23:23:38
  */
 import React, { FC } from 'react';
 import { connect, Dispatch } from 'umi';
 import { ConnectState } from '@/models/connect';
-import LoginModule from '@/components/loginModule';
+import LoginModule from './components/loginModule';
 import './index.less';
 import logo from '@/assets/logo.png'
 
-export default () => {
+export interface LoginLayoutProps {
+  dispatch: Dispatch;
+  login: ConnectState;
+  loading: boolean;
+}
+export interface SubmitValueProps {
+  username: string,
+  password: string
+}
+
+const Login: FC<LoginLayoutProps> = ({ dispatch }) => {
+  const handleSubmit = (values: SubmitValueProps) => {
+    dispatch({
+      type: '/login/queryLogin',
+      payload: {
+        ...values
+      }
+    })
+  }
   return (
     <div className="userLayOut-cover">
       <div className="login-form-wrap">
@@ -28,9 +46,15 @@ export default () => {
             </div>
           </div>
           {/* form */}
-          <LoginModule />
+          <LoginModule onSubmit={handleSubmit}/>
         </div>
       </div>
     </div>
   );
 };
+
+export default connect(
+  ({ login }: { login: ConnectState }) => ({ login })
+)(
+  Login,
+);
