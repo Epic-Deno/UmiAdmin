@@ -3,9 +3,9 @@
  * @Author: Pony
  * @Date: 2021-08-09 22:32:16
  * @LastEditors: Pony
- * @LastEditTime: 2021-08-10 22:22:52
+ * @LastEditTime: 2021-08-13 22:43:20
  */
-import { Effect, Reducer, Subscription } from 'umi';
+import { Effect, Reducer, Subscription, history } from 'umi';
 import { queryUserInfo } from '@/services/login';
 import menusSource from '../../config/menu.config';
 import { MenusDate, LoginUserInfoState } from './connect.d';
@@ -51,7 +51,8 @@ const GlobalModel: GlobalModelType = {
             userInfo: response.data,
           },
         });
-      }
+      } 
+      
     },
   },
   reducers: {

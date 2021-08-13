@@ -3,19 +3,20 @@
  * @Author: Pony
  * @Date: 2021-08-12 23:22:49
  * @LastEditors: Pony
- * @LastEditTime: 2021-08-13 22:27:00
+ * @LastEditTime: 2021-08-13 22:35:13
  */
 import { Form, Input, Button } from 'antd';
+import { UserOutlined, LockOutlined } from '@ant-design/icons'
 import './index.less';
 export default () => {
   return (
     <div className="login_form">
       <Form>
         <Form.Item>
-          <Input size="large" placeholder="admin" />
+          <Input size="large" placeholder="admin" prefix={<UserOutlined />}/>
         </Form.Item>
         <Form.Item>
-          <Input.Password size="large" placeholder="Password: 123456" />
+          <Input.Password size="large" placeholder="Password: 123456" prefix={<LockOutlined />}/>
         </Form.Item>
         <Form.Item>
           <Button type="primary" block size="large" htmlType="submit">
