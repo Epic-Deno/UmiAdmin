@@ -3,8 +3,11 @@
  * @Author: Pony
  * @Date: 2021-08-12 22:08:27
  * @LastEditors: Pony
- * @LastEditTime: 2021-08-12 23:53:01
+ * @LastEditTime: 2021-08-13 23:12:18
  */
+import React, { FC } from 'react';
+import { connect, Dispatch } from 'umi';
+import { ConnectState } from '@/models/connect';
 import LoginModule from '@/components/loginModule';
 import './index.less';
 import logo from '@/assets/logo.png'
