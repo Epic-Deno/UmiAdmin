@@ -15,7 +15,7 @@
 .container .content {
   flex: auto;
   display: flex;
-  margin: 16px 24px;
+  padding: 24px;
   min-height: 280px;
 }
 .container .content > div {
