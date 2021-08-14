@@ -3,7 +3,7 @@
  * @Author: Pony
  * @Date: 2021-08-14 23:00:07
  * @LastEditors: Pony
- * @LastEditTime: 2021-08-14 23:03:47
+ * @LastEditTime: 2021-08-15 00:27:09
  */
 import {
     PayCircleOutlined,
@@ -19,6 +19,8 @@ import {
     LineOutlined,
     BarChartOutlined,
     AreaChartOutlined,
+    SettingOutlined,
+    UsergroupDeleteOutlined
   } from '@ant-design/icons'
   
   export default {
@@ -35,4 +37,6 @@ import {
     user: <UserOutlined />,
     api: <ApiOutlined />,
     edit: <EditOutlined />,
+    setting: <SettingOutlined />,
+    UserGroup: <UsergroupDeleteOutlined />
   }

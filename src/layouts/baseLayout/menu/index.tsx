@@ -3,13 +3,14 @@
  * @Author: Pony
  * @Date: 2021-08-09 22:55:38
  * @LastEditors: Pony
- * @LastEditTime: 2021-08-15 00:13:19
+ * @LastEditTime: 2021-08-15 00:25:30
  */
 import React, { FC } from 'react';
 import { Link, connect, useLocation, Loading } from 'umi';
-import { Menu, Icon } from 'antd';
+import { Menu } from 'antd';
 import { GlobalModelState } from '@/models/connect';
 import { queryKeysByPath } from '@/utils/utils';
+import iconMap from '@/utils/iconMap';
 
 const { SubMenu, Item } = Menu;
 
@@ -26,11 +27,16 @@ const MenuContent: FC<BasicLayoutProps> = ({ global }) => {
     const rows = Array.isArray(data) ? data : [];
     return rows.map((row) => {
       if (!row) return false;
-      const { title, link = '', key, children, ...restState } = row;
+      const { title, link = '', icon, key, children, ...restState } = row;
       if (children && children.length > 0) {
         const subMenu = renderMenu(children); // 递归
         return (
-          <SubMenu key={key} title={<span>{title}</span>}>
+          <SubMenu key={key} title={
+            <>
+              {iconMap[icon as keyof typeof iconMap]}
+              <span>{title}</span>
+            </>
+          }>
             {subMenu}
           </SubMenu>
         );
@@ -38,7 +44,7 @@ const MenuContent: FC<BasicLayoutProps> = ({ global }) => {
       return (
         <Item key={key} title={title}>
           <Link to={{ pathname: link, state: { ...restState, key } }}>
-            <Icon type={icon} />
+            {iconMap[icon as keyof typeof iconMap]}
             <span>{title}</span>
           </Link>
         </Item>

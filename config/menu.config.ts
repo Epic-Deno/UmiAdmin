@@ -3,7 +3,7 @@
  * @Author: Pony
  * @Date: 2021-08-09 21:32:29
  * @LastEditors: Pony
- * @LastEditTime: 2021-08-15 00:11:28
+ * @LastEditTime: 2021-08-15 00:27:18
  */
 export default [
   {
@@ -17,20 +17,20 @@ export default [
     title: '用户管理',
     link: '/userManagement',
     key: 'userManagement',
-    icon: 'user',
+    icon: 'team',
     children: [
       {
         title: '用户列表',
         link: '/userManagement/list',
         key: 'list',
-        icon: '',
+        icon: 'user',
         children: [],
       },
       {
         title: '用户权限',
         link: '/userManagement/userPermission',
         key: 'userPermission',
-        icon: '',
+        icon: 'UserGroup',
         children: [],
       },
 
