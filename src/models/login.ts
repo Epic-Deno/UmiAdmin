@@ -3,7 +3,7 @@
  * @Author: Pony
  * @Date: 2021-08-09 22:04:59
  * @LastEditors: Pony
- * @LastEditTime: 2021-08-14 00:00:38
+ * @LastEditTime: 2021-08-14 22:10:12
  */
 import { Effect, Reducer, history } from 'umi';
 import { message } from 'antd';
@@ -43,7 +43,6 @@ const LoginModel: LoginModelType = {
   effects: {
     *queryLogin({ payload }, { call, put }) {
       // const { name } = yield select((state: ConnectState) => state.global);
-      console.log(payload)
       const response = yield call(queryLogin, { ...payload });
       if (response.status === 'ok') {
         yield put({

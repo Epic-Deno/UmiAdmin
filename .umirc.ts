@@ -3,7 +3,7 @@
  * @Author: ZHANG ZHEN
  * @Date: 2021-07-02 23:04:10
  * @LastEditors: Pony
- * @LastEditTime: 2021-08-12 23:55:13
+ * @LastEditTime: 2021-08-14 22:25:14
  */
 import { defineConfig } from 'umi';
 import routes from './src/routes';
@@ -16,6 +16,9 @@ export default defineConfig({
   //   layout: 'side',
   //   logo: 'https://sf1-ttcdn-tos.pstatp.com/img/user-avatar/ad7186da163aaf25f3a2d719603c37d0~300x300.image',
   // },
+  dynamicImport: {
+    loading: '@/components/loading',
+  },
   nodeModulesTransform: {
     type: 'none',
   },

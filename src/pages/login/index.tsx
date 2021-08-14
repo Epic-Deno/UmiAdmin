@@ -3,7 +3,7 @@
  * @Author: Pony
  * @Date: 2021-08-12 22:08:27
  * @LastEditors: Pony
- * @LastEditTime: 2021-08-14 00:17:14
+ * @LastEditTime: 2021-08-14 22:09:43
  */
 import React, { FC } from 'react';
 import { connect, Dispatch } from 'umi';
@@ -24,7 +24,6 @@ export interface SubmitValueProps {
 
 const Login: FC<LoginLayoutProps> = ({ dispatch }) => {
   const handleSubmit = (values: SubmitValueProps) => {
-    console.log(values)
     dispatch({
       type: 'login/queryLogin',
       payload: {
