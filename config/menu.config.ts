@@ -3,21 +3,21 @@
  * @Author: Pony
  * @Date: 2021-08-09 21:32:29
  * @LastEditors: Pony
- * @LastEditTime: 2021-08-12 22:31:44
+ * @LastEditTime: 2021-08-15 00:11:28
  */
 export default [
   {
     title: '首页',
     link: '/dashboard',
     key: 'dashboard',
-    icon: 'home',
+    icon: 'dashboard',
     children: [],
   },
   {
     title: '用户管理',
     link: '/userManagement',
     key: 'userManagement',
-    icon: '',
+    icon: 'user',
     children: [
       {
         title: '用户列表',
@@ -40,7 +40,7 @@ export default [
     title: '系统管理',
     link: '/settings',
     key: 'settings',
-    icon: '',
+    icon: 'setting',
     children: [],
   },
 ];

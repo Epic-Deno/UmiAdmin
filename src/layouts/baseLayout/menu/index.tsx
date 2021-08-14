@@ -3,11 +3,11 @@
  * @Author: Pony
  * @Date: 2021-08-09 22:55:38
  * @LastEditors: Pony
- * @LastEditTime: 2021-08-09 23:13:01
+ * @LastEditTime: 2021-08-15 00:13:19
  */
 import React, { FC } from 'react';
 import { Link, connect, useLocation, Loading } from 'umi';
-import { Menu } from 'antd';
+import { Menu, Icon } from 'antd';
 import { GlobalModelState } from '@/models/connect';
 import { queryKeysByPath } from '@/utils/utils';
 
@@ -38,7 +38,7 @@ const MenuContent: FC<BasicLayoutProps> = ({ global }) => {
       return (
         <Item key={key} title={title}>
           <Link to={{ pathname: link, state: { ...restState, key } }}>
-            {/* <Icon type={icon} /> */}
+            <Icon type={icon} />
             <span>{title}</span>
           </Link>
         </Item>

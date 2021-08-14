@@ -3,7 +3,7 @@
  * @Author: ZHANG ZHEN
  * @Date: 2021-07-02 23:04:10
  * @LastEditors: Pony
- * @LastEditTime: 2021-08-14 23:31:24
+ * @LastEditTime: 2021-08-14 23:51:38
  */
 import React, { useState } from 'react';
 import {  Row, Col, Card, Avatar, Skeleton } from 'antd';
@@ -49,11 +49,11 @@ function IndexPage() {
   ))
 
   return (
-    <>
+    <div className="dashboard">
       <Row gutter={24}>
           {numberCards}
       </Row>
-    </>
+    </div>
   );
 }
 

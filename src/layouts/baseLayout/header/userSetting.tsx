@@ -3,10 +3,10 @@
  * @Author: Pony
  * @Date: 2021-08-09 21:53:38
  * @LastEditors: Pony
- * @LastEditTime: 2021-08-14 00:21:56
+ * @LastEditTime: 2021-08-15 00:08:39
  */
 
-import React, { FC } from 'react';
+import React, { FC, Fragment } from 'react';
 import { connect, Dispatch } from 'umi';
 import { Dropdown, Menu, Avatar } from 'antd';
 import {
@@ -16,6 +16,10 @@ import {
 } from '@ant-design/icons';
 import { LoginModelState, GlobalModelState } from '@/models/connect';
 
+const menuStyle = {
+  width: 'max-content',
+  float: 'right'
+}
 export interface HeaderLayoutProps {
   dispatch: Dispatch;
   global: GlobalModelState;
@@ -57,11 +61,15 @@ const UserSettingLayout: FC<HeaderLayoutProps> = ({ global, dispatch }) => {
         textAlign: 'right',
       }}
     >
-      <Avatar src="https://avatars.githubusercontent.com/u/74635349?s=64&v=4" style={{ marginRight: '8px' }}/>
+     
       <Dropdown overlay={menu} placement="bottomRight">
-        <span style={{ cursor: 'pointer', color: '#fff', fontSize: 14 }}>
-          {userInfo.username} <DownOutlined />
-        </span>
+        <div style={menuStyle}>
+          <Avatar src="https://avatars.githubusercontent.com/u/74635349?s=64&v=4" style={{ marginRight: '8px' }}/>
+          <span style={{ cursor: 'pointer', color: '#fff', fontSize: 14 }}>
+            {userInfo.username} <DownOutlined />
+          </span>
+        </div>
+       
       </Dropdown>
     </div>
   );
