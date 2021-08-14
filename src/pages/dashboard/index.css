@@ -1,3 +1,19 @@
-:v-deep .content {
-  background-color: transparent;
+.dashboard {
+  position: relative;
+}
+.dashboard :global .ant-card {
+  border-radius: 0;
+  margin-bottom: 24px;
+}
+.dashboard :global .ant-card:hover {
+  box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.05);
+}
+.dashboard :global .ant-card-body {
+  overflow-x: hidden;
+}
+.dashboard .weather:hover {
+  box-shadow: 4px 4px 40px rgba(143, 201, 251, 0.6);
+}
+.dashboard .quote:hover {
+  box-shadow: 4px 4px 40px rgba(246, 152, 153, 0.6);
 }

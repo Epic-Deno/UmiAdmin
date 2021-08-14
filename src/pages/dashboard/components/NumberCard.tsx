@@ -3,12 +3,12 @@
  * @Author: Pony
  * @Date: 2021-08-14 22:45:16
  * @LastEditors: Pony
- * @LastEditTime: 2021-08-14 23:08:51
+ * @LastEditTime: 2021-08-14 23:25:58
  */
 import React, { FC } from 'react';
 import { Card } from 'antd';
 import iconMap from '@/utils/iconMap'
-import styles from './index.less';
+import styles from './NumberCard.less';
 
 interface NumberCardType {
   icon: string;
