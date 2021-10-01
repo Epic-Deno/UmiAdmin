@@ -1,0 +1,1 @@
+(self["webpackChunkUmiAdmin"]=self["webpackChunkUmiAdmin"]||[]).push([[866],{46076:function(a,e,s){"use strict";s.r(e);var t=s(19630),n=s(85893);e["default"]=()=>(0,n.jsx)(t.l_,{to:{pathname:"/dashboard",state:{}}})}}]);

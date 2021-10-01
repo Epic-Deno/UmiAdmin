@@ -1,0 +1,53 @@
+<!--
+ * @Description: html模板
+ * @Author: Pony
+ * @Date: 2021-08-08 22:38:49
+ * @LastEditors: Pony
+ * @LastEditTime: 2021-08-14 23:53:41
+--><!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>
+      博客管理台/title&gt; &lt;link rel="shortcut icon"
+      href="https://avatars.githubusercontent.com/u/74635349?v=4"
+      type="image/png"&gt; &lt;style&gt; html { font-size: 13px; } .container {
+      width: 100%; min-height: 100vh; display: flex; justify-content: center;
+      align-items: center; min-height: 100vh; background:
+      linear-gradient(143deg, rgba(48, 121, 200, 1), rgba(60, 82, 178, 1)) } svg
+      { width: 0; height: 0; } .loader { position: relative; width: 200px;
+      height: 200px; filter: url(#gooey); } .loader span { position: absolute;
+      top: 0; left: 0; width: 100%; height: 100%; display: block; animation:
+      animate 4s ease-in-out infinite; animation-delay: calc(0.2s * var(--i)); }
+      .loader span:before { content: ''; position: absolute; top: 0; left:
+      calc(50% - 20px); width: 40px; height: 40px; border-radius: 50%;
+      box-shadow: 0 0 30px #03a9f4; background: linear-gradient(#fce4ec,
+      #03a9f4); } i.loadingTitle { color: #fff; font-size: 16px; position:
+      absolute; top: 50%; left: 50%; opacity: 1; transform: translate(-50%,
+      -50%); } @keyframes animate { 0% { transform: rotate(0deg); } 50%, 100% {
+      transform: rotate(360deg); } } &lt;/style&gt; &lt;/head&gt; &lt;body&gt;
+      &lt;div id="root"&gt; &lt;div class="container"&gt; &lt;div
+      class="loader"&gt; &lt;span style="--i:1;"&gt;&lt;/span&gt; &lt;span
+      style="--i:2;"&gt;&lt;/span&gt; &lt;span style="--i:3;"&gt;&lt;/span&gt;
+      &lt;span style="--i:4;"&gt;&lt;/span&gt; &lt;span
+      style="--i:5;"&gt;&lt;/span&gt; &lt;span style="--i:6;"&gt;&lt;/span&gt;
+      &lt;span style="--i:7;"&gt;&lt;/span&gt; &lt;/div&gt; &lt;i
+      class="loadingTitle"&gt;Pony Design正在加载,请耐心等待&lt;/i&gt;
+      &lt;svg&gt; &lt;filter id="gooey"&gt; &lt;feGaussianBlur
+      in="SourceGraphic" stdDeviation="10" /&gt; &lt;feColorMatrix values=" 1 0
+      0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 20 -10 " /&gt; &lt;/filter&gt;
+      &lt;/svg&gt; &lt;/div&gt; &lt;/div&gt; &lt;/body&gt; &lt;/html&gt;
+    </title>
+    <link rel="stylesheet" href="/UmiAdmin/umi.css" />
+    <script>
+      window.routerBase = "/";
+    </script>
+    <script>
+      //! umi version: 3.5.2
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script src="/UmiAdmin/umi.js"></script>
+  </body>
+</html>
