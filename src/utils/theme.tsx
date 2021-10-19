@@ -1,9 +1,9 @@
 /*
- * @Description: 主题色
+ * @Description: 主题色设置
  * @Author: Pony
  * @Date: 2021-08-15 00:30:58
  * @LastEditors: Pony
- * @LastEditTime: 2021-08-15 00:31:41
+ * @LastEditTime: 2021-10-19 23:08:40
  */
 
 export default {
